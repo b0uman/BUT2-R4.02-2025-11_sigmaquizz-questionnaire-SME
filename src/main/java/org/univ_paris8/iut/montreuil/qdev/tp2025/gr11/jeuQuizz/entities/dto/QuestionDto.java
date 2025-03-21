@@ -1,18 +1,25 @@
 package org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.entities.dto;
 
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.enums.Difficulte;
+import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.enums.Langues;
 
 public class QuestionDto {
     private int numQuestion;
     private String libelle;
     private String reponse;
+    private String source;
+    private String informations;
+    Langues langues;
     Difficulte difficulte;
 
-    public QuestionDto(int numQuestion, String libelle, String reponse, Difficulte difficulte) {
+    public QuestionDto(int numQuestion, Langues langues, String libelle, String reponse, Difficulte difficulte, String informations, String source) {
         this.numQuestion = numQuestion;
         this.libelle = libelle;
         this.reponse = reponse;
         this.difficulte = difficulte;
+        this.source = source;
+        this.informations = informations;
+        this.langues = langues;
     }
 
     public int getNumQuestion() {
