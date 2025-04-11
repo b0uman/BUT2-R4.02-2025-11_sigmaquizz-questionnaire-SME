@@ -1,0 +1,9 @@
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/App.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/entities/dto/QuestionDto.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/entities/dto/QuestionnaireDto.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/services/interfaces/IQuestionniareServices.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/utils/enums/Difficulte.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/utils/enums/Langues.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/utils/exceptions/FichierCorompuException.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/utils/exceptions/LiensNonValideException.java
+/home/etudiants/info/gvignon/prive/S4/Dev/BUT2-R4.02-2025-11_sigmaquizz-questionnaire-SME/src/main/java/org/univ_paris8/iut/montreuil/qdev/tp2025/gr11/jeuQuizz/utils/exceptions/QuestionnaireException.java
