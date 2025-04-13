@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.AppTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s -- in org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.AppTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.AppTest

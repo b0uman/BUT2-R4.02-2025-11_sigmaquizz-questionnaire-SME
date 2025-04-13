@@ -5,6 +5,7 @@ import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.entities.dto.Ques
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.services.interfaces.IQuestionniareServices;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.enums.Difficulte;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.enums.Langues;
+import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.exceptions.FichierCorompuException;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.exceptions.LiensNonValideException;
 import org.univ_paris8.iut.montreuil.qdev.tp2025.gr11.jeuQuizz.utils.exceptions.QuestionnaireException;
 
@@ -61,7 +62,7 @@ public class QuestionnaireServiceImpl implements IQuestionniareServices {
                     String source = values[7];
 
                     // Créer un objet QuestionDto
-                    QuestionDto question = new QuestionDto(numQuestion, langue, libelle, reponse, difficulte, informations, source);
+                    QuestionDto question = new QuestionDto(numQuestion, libelle, reponse, difficulte);
                     listeDeQuestions.add(question);
                 } catch (IllegalArgumentException e) {
                     throw new QuestionnaireException("Erreur : données de question mal formées dans le fichier CSV.");
@@ -79,11 +80,15 @@ public class QuestionnaireServiceImpl implements IQuestionniareServices {
     // lien invalide bien relier le csv au projet pour pouvoir reeleement tester les changemments
 
     @Override
-    public ArrayList<QuestionnaireDto> fournirListeQuestionnaire(String lien) throws QuestionnaireException {
+    public ArrayList<QuestionnaireDto> fournirListeQuestionnaire(String lien)throws LiensNonValideException, FichierCorompuException {
         // Vérifier si la bibliothèque est déjà chargée
         if (!isBibliothequeChargee()) {
             // Si la bibliothèque est vide, charger les questions depuis le fichier CSV
-            chargerQuestionsDepuisCsv(lien);
+            try {
+                chargerQuestionsDepuisCsv(lien);
+            } catch (QuestionnaireException e) {
+                throw new LiensNonValideException() ;
+            }
         }
         // Retourner la liste des questionnaires
         return new ArrayList<>(bibliotheque);

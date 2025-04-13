@@ -12,14 +12,13 @@ public class QuestionDto {
     Langues langues;
     Difficulte difficulte;
 
-    public QuestionDto(int numQuestion, Langues langues, String libelle, String reponse, Difficulte difficulte, String informations, String source) {
+    public QuestionDto(int numQuestion, String libelle, String reponse, Difficulte difficulte) {
         this.numQuestion = numQuestion;
         this.libelle = libelle;
         this.reponse = reponse;
         this.difficulte = difficulte;
-        this.source = source;
-        this.informations = informations;
-        this.langues = langues;
+
+
     }
 
     public int getNumQuestion() {

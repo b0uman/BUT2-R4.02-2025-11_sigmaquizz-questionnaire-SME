@@ -35,9 +35,9 @@ public class AppTest {
     public void setUp() {
         ArrayList<QuestionDto> listeQuestion = new ArrayList<>();
         listeQuestionnaireTest = new ArrayList<>();
-        QuestionDto questionDto1 = new QuestionDto(1,"De quel petit objet se munit le golfeur pour surélever sa balle avant de la frapper ?","Tee", Difficulte.facile);
-        QuestionDto questionDto2 = new QuestionDto(2,"Quel sport de raquette porte le nom de la ville anglaise où il fut inventé ?","Badminton",Difficulte.facile);
-        QuestionDto questionDto3 = new QuestionDto(3,"Combien y a-t-il de joueurs sur le terrain dans une équipe de football ?","Onze",Difficulte.facile);
+        QuestionDto questionDto1 = new QuestionDto(1,"De quel petit objet se munit le golfeur pour surélever sa balle avant de la frapper ?","Tee", Difficulte.FACILE);
+        QuestionDto questionDto2 = new QuestionDto(2,"Quel sport de raquette porte le nom de la ville anglaise où il fut inventé ?","Badminton",Difficulte.FACILE);
+        QuestionDto questionDto3 = new QuestionDto(3,"Combien y a-t-il de joueurs sur le terrain dans une équipe de football ?","Onze",Difficulte.FACILE);
         listeQuestion.add(questionDto1);
         listeQuestion.add(questionDto2);
         listeQuestion.add(questionDto3);
