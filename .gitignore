@@ -1,0 +1,22 @@
+# Ignorer les fichiers IntelliJ IDEA
+.idea/
+*.iml
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de build
+/out/
+/target/
+/build/
+
+# Ignorer les fichiers temporaires
+*.log
+*.tmp
+*.swp
+
+# Ignorer les fichiers sensibles
+.env
+*.key
+*.pem
